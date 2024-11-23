@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A professional number converter tool created by Satyajit Sethy, supporting conversions between Decimal, Binary, Hexadecimal, and Octal.">
+    <meta name="author" content="Satyajit Sethy">
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Converter</h1>
+        <p class="author">
+            <b>Designed and developed by</b> 
+            <a href="https://www.instagram.com/thesatyajitsethy/" target="_blank" rel="noopener noreferrer">
+                Satyajit Sethy
+            </a>
+        </p>
+        <br>
+        <div class="form">
+            <label for="inputType">Select the type of input:</label>
+            <select id="inputType">
+                <option value="decimal">Decimal</option>
+                <option value="binary">Binary</option>
+                <option value="hexadecimal">Hexadecimal</option>
+                <option value="octal">Octal</option>
+            </select>
+            <br><br>
+            <div id="inputDiv">
+                <label for="inputNumber">Enter a number:</label>
+                <input type="text" id="inputNumber" placeholder="Enter your number here">
+            </div>
+            <button onclick="convert()">Convert</button>
+        </div>
+        <div id="output" class="output"></div>
+        <footer>
+            <p>&copy; 2024 
+                <a href="https://www.instagram.com/thesatyajitsethy/" target="_blank" rel="noopener noreferrer">
+                    Satyajit Sethy
+                </a>. All rights reserved.
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
